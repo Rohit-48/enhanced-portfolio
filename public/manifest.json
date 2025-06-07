@@ -1,0 +1,86 @@
+{
+    "name": "Rohit Mandavkar - Portfolio",
+    "short_name": "Rohit",
+    "description": "CS student, Web dev/Design & Thinker. Learning C/C++, Rust, JavaScript. Web + AI enthusiast.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "categories": ["portfolio", "developer", "technology", "student"],
+    "lang": "en-US",
+    "dir": "ltr",
+    "screenshots": [
+      {
+        "src": "/images/screenshot-desktop.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "Rohit's Portfolio - Desktop View"
+      },
+      {
+        "src": "/images/screenshot-mobile.png",
+        "sizes": "390x844",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "Rohit's Portfolio - Mobile View"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Projects",
+        "short_name": "Projects",
+        "description": "View Rohit's latest projects",
+        "url": "/projects",
+        "icons": [
+          {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32"
+          }
+        ]
+      },
+      {
+        "name": "Blog",
+        "short_name": "Blog",
+        "description": "Read Rohit's latest blog posts",
+        "url": "/blog",
+        "icons": [
+          {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32"
+          }
+        ]
+      }
+    ]
+  }
+  
