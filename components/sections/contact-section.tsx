@@ -15,7 +15,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-100 dark:border-gray-800"
+      className="max-w-4xl mx-auto px-6 py-16 dark:border-gray-800"
       aria-labelledby="contact-heading"
     >
       <div className="space-y-8">
