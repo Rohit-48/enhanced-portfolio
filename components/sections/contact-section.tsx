@@ -46,39 +46,6 @@ export function ContactSection() {
               reach out.
             </p>
           </motion.div>
-          <motion.div
-            className="space-y-4"
-            role="list"
-            aria-label="Contact information"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            {contactLinks.map((contact, index) => (
-              <motion.div
-                key={contact.label}
-                role="listitem"
-                className="flex items-center space-x-3 group"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                whileHover={{ x: 4 }}
-              >
-                <contact.icon className="h-5 w-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
-                <Link
-                  href={contact.href}
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-sm"
-                  target={contact.href.startsWith("mailto:") ? undefined : "_blank"}
-                  
-                  rel={contact.href.startsWith("mailto:rohitmandavkar3577@gmail.com") ? undefined : "noopener noreferrer"}
-                >
-                  {contact.label}
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </div>
     </section>
