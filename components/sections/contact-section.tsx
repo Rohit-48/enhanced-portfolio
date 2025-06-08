@@ -46,6 +46,45 @@ export function ContactSection() {
               reach out.
             </p>
           </motion.div>
+          <motion.div
+            className="flex flex-col items-start justify-center space-y-4"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {siteConfig.links.github && (
+              <Link
+                href={siteConfig.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Github className="h-5 w-5" />
+                <span>GitHub</span>
+              </Link>
+            )}
+            {siteConfig.links.linkedin && (
+              <Link
+                href={siteConfig.links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+                <span>LinkedIn</span>
+              </Link>
+            )}
+            {siteConfig.author.email && (
+              <Link
+                href={`mailto:${siteConfig.author.email}`}
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+                <span>{siteConfig.author.email}</span>
+              </Link>
+            )}
+          </motion.div>
         </div>
       </div>
     </section>
