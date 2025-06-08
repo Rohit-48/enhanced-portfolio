@@ -71,6 +71,7 @@ export function ContactSection() {
                   href={contact.href}
                   className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-sm"
                   target={contact.href.startsWith("mailto:") ? undefined : "_blank"}
+                  
                   rel={contact.href.startsWith("mailto:rohitmandavkar3577@gmail.com") ? undefined : "noopener noreferrer"}
                 >
                   {contact.label}
