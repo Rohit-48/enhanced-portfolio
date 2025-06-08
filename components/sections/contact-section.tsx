@@ -48,7 +48,51 @@ export function ContactSection() {
           </motion.div>
         </div>
       </div>
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 flex flex-col items-center justify-center space-y-4">
+        <div className="flex space-x-4">
+          {siteConfig.links.github && (
+            <Link
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Github className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+          )}
+          {siteConfig.links.linkedin && (
+            <Link
+              href={siteConfig.links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+          )}
+          {siteConfig.links.twitter && (
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Twitter</span>
+            </Link>
+          )}
+          {siteConfig.author.email && (
+            <Link
+              href={`mailto:${siteConfig.author.email}`}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Email</span>
+            </Link>
+          )}
+        </div>
         <Link
           href={`mailto:${siteConfig.author.email}`}
           className="inline-flex items-center px-6 py-2 rounded-md bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 font-medium shadow hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500"
