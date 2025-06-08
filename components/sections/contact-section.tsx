@@ -48,6 +48,14 @@ export function ContactSection() {
           </motion.div>
         </div>
       </div>
+      <div className="mt-8 flex justify-center">
+        <Link
+          href={`mailto:${siteConfig.author.email}`}
+          className="inline-flex items-center px-6 py-2 rounded-md bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 font-medium shadow hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500"
+        >
+          Get in touch
+        </Link>
+      </div>
     </section>
   )
 }
