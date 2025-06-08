@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { MainNav } from "@/components/navigation/main-nav"
-import { Footer } from "@/components/footer"
 import { SkipLink } from "@/components/skip-link"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { ToastProvider } from "@/components/providers/toast-provider"
@@ -166,7 +165,6 @@ export default function RootLayout({
               <main className="flex-1">
                 {children}
               </main>
-              <Footer />
             </div>
           </ToastProvider>
         </ThemeProvider>
