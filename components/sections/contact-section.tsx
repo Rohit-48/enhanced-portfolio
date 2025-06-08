@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Mail, Github, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
 import { siteConfig } from "@/config/site"
+import { Twitter } from "lucide-react"
 
 const contactLinks = [
   { icon: Mail, label: siteConfig.author.email, href: `mailto:${siteConfig.author.email}` },
@@ -73,6 +74,17 @@ export function ContactSection() {
               >
                 <Linkedin className="h-5 w-5" />
                 <span>LinkedIn</span>
+              </Link>
+            )}
+            {siteConfig.links.twitter && (
+              <Link
+                href={siteConfig.links.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Twitter className="h-5 w-5" />
+                <span>Twitter/X</span>
               </Link>
             )}
             {siteConfig.author.email && (
