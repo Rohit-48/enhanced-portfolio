@@ -77,6 +77,21 @@ export const blogPosts: BlogPost[] = [
       name: "Rohit",
     },
   },
+  {
+    id: "5",
+    title: "NixOS: A Purely Functional Linux Distribution",
+    description: "A quick story about how I discovered this absolute banger of a distro.",
+    date: "2025-06-13",
+    readTime: "5 min read",
+    published: true,
+    featured: false,
+    slug: "nixos-a-purely-functional-linux-distribution",
+    category: "Linux",
+    tags: ["Linux", "NixOS", "Declarative", "Functional"],
+    author: {
+      name: "Rohit",
+    },
+  },
 ]
 
 export const getPublishedPosts = () => blogPosts.filter((post) => post.published)
